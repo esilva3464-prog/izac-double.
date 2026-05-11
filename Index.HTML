@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IZAC DOUBLE ANALYST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Lado Esquerdo: Blaze -->
+    <div class="panel blaze-panel">
+      <div class="header">
+        <h2>🎰 BLAZE DOUBLE</h2>
+        <p>Plataforma Oficial</p>
+      </div>
+      <iframe id="blaze-frame" src="https://blaze.com/pt/games/double" allowfullscreen></iframe>
+    </div>
+
+    <!-- Lado Direito: Painel do Bot -->
+    <div class="panel bot-panel">
+      <div class="header">
+        <h2>🤖 IZAC DOUBLE ANALYST</h2>
+        <span id="status" class="status active">● ANALISANDO</span>
+      </div>
+
+      <div class="content">
+        <div id="ultimo-sinal" class="sinal-box">
+          <h3>Último Sinal</h3>
+          <div id="sinal-content">Aguardando análise...</div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <span>Winrate</span>
+            <strong id="winrate">0%</strong>
+          </div>
+          <div class="stat-item">
+            <span>Wins</span>
+            <strong id="wins">0</strong>
+          </div>
+          <div class="stat-item">
+            <span>Losses</span>
+            <strong id="losses">0</strong>
+          </div>
+        </div>
+
+        <div class="historico">
+          <h3>Histórico Recente</h3>
+          <div id="historico-list"></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <button onclick="window.location.reload()">Atualizar Página</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
